@@ -11,7 +11,7 @@ tags:
     - Spring
 ---
 
-####jar 命令开启远程调试
+#### jar 命令开启远程调试
 java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -jar demo.jar
 
 
