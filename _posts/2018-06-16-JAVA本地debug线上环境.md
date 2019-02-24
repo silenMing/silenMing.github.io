@@ -29,7 +29,7 @@ tomcat开启远程调试
 执行上面的命令就可以开启远程debug了，如果想配置一些信息，比如端口号什么的，请参考下面的说明。
 参数说明
 
-####
+
 
     #   JPDA_TRANSPORT  (Optional) JPDA transport used when the "jpda   start"
     #                   command is executed. The default is "dt_socket".
@@ -49,7 +49,7 @@ tomcat开启远程调试
     #                   -agentlib:jdwp=transport=$JPDA_TRANSPORT,
     #                       address=$JPDA_ADDRESS,server=y,suspend=$JPDA_SUSPEND
 
-####操作说明
+#### 操作说明
 所以如果想修改配置，则如下操作：
 在catalina.sh中进行配置：
 JPDA_TRANSPORT=dt_socket  
@@ -59,7 +59,7 @@ JPAD_SUSPEND=n
 或者通过JPDA_OPTS进行配置：
 JPDA_OPTS='-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005’
 
-####springboot开启远程调试
+#### springboot开启远程调试
 远程调试maven设置
 The run goal forks a process for the boot application. It is possible to specify jvm arguments to that forked process. The following configuration suspend the process until a debugger has joined on port 5005
 
