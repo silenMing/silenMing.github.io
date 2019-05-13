@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      多线程模型之 - golang(一)
+title:      多线程模型之 - golang G的结构及创建过程
 subtitle:   
 date:       2018-11-25
 author:     BY
